@@ -1,0 +1,15 @@
+Description du programme souhaité
+
+Démarrage :
+- Etat inititial -
+Le ventilateur ne tourne pas, aucun bouton n'est pressé
+
+Evenement: Appui sur "Bouton Plus"
+->Augmente la vitesse du ventilateur de 20% (+51 PWM)
+
+Evenement: Appui sur "Bouton Moins"
+Réduit la vitesse du ventilateur de 20% (-51 PWM)
+
+Evenement: Appui sur "Bouton Stop"
+-> Si le ventilateur tourne entre 0% (0 PWM) et 80% (204 PWM) compris, le fait tourner à 100% (255 PWM)
+-> Si le ventilateur tourne à 100% (255 PWM), le fait tourner à 0% (0 PWM) -> Met le ventilateur hors-tension
